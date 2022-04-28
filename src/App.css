@@ -63,6 +63,36 @@ main::-webkit-scrollbar {
   display: none;
 }
 
+.fight-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fighter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30vw;
+  padding: 10px;
+}
+
+.lion {
+  background-image: url('./savanna.png');
+  background-size: auto 75%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.fighter img {
+  width: 200px;
+}
+
+.fighter button {
+  margin: 3px 0;
+}
+
 .open-sign-container {
   width: 270px;
   padding: 10px;
