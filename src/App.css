@@ -22,7 +22,7 @@
 
 body {
   height: 100vh;
-  background-image: url("./at-the-zoo-bill-bell.jpeg");
+  background-image: url("./assets/at-the-zoo-bill-bell.jpeg");
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -75,11 +75,21 @@ main::-webkit-scrollbar {
   align-items: center;
   justify-content: flex-end;
   width: 30vw;
-  padding: 10px;
+  margin: 10px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+}
+
+.unicorn {
+  background-image: url('./assets/unicorn-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .lion {
-  background-image: url('./savanna.png');
+  background-image: url('./assets/savanna.png');
   background-size: auto 75%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -90,7 +100,7 @@ main::-webkit-scrollbar {
 }
 
 .fighter button {
-  margin: 3px 0;
+  margin: 4px 0;
 }
 
 .open-sign-container {
