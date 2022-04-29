@@ -35,7 +35,7 @@ body {
 header {
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 40px;
   background: beige;
   bottom: 0;
 }
@@ -43,7 +43,7 @@ header {
 footer {
   display: flex;
   width: 100%;
-  height: 30px;
+  height: 25px;
   background: beige;
   position: fixed;
   bottom: 0;
@@ -51,7 +51,7 @@ footer {
 
 main {
   width: 85%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 65px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,4 +132,17 @@ main::-webkit-scrollbar {
   width: 150px;
   display: flex;
   justify-content: space-evenly;
+}
+
+.parade-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.parade-buttons button {
+  margin: 0 2px;
+  font-size: 1.5rem;
 }

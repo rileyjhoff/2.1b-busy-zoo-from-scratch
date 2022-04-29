@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import OpenSign from './components/OpenSign';
 import Fight from './components/Fight';
+import Parade from './components/Parade';
 
 function App() {
   const [unicornSize, setUnicornSize] = useState(10);
@@ -20,7 +21,11 @@ function App() {
           setUnicornSize={setUnicornSize}
           setLionSize={setLionSize} 
         />
-        <OpenSign isOpen={isOpen} setIsOpen={setIsOpen} />
+        <OpenSign 
+          isOpen={isOpen} 
+          setIsOpen={setIsOpen} 
+        />
+        <Parade />
       </main>
       <footer>
         <h3>This is the footer</h3>
