@@ -20,6 +20,10 @@
   }
 }
 
+* {
+  user-select: none;
+}
+
 body {
   height: 100vh;
   background-image: url("./assets/at-the-zoo-bill-bell.jpeg");
@@ -67,6 +71,7 @@ main::-webkit-scrollbar {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 10px 0;
 }
 
 .fighter {
@@ -75,10 +80,14 @@ main::-webkit-scrollbar {
   align-items: center;
   justify-content: flex-end;
   width: 30vw;
-  margin: 10px;
+  height: 312px;
+  margin: 0 10px;
   padding: 10px 0;
   border: none;
   border-radius: 20px;
+}
+.fighter button {
+  margin: 4px 0;
 }
 
 .unicorn {
@@ -95,13 +104,6 @@ main::-webkit-scrollbar {
   background-position: bottom;
 }
 
-.fighter img {
-  width: 200px;
-}
-
-.fighter button {
-  margin: 4px 0;
-}
 
 .open-sign-container {
   width: 270px;
@@ -112,7 +114,7 @@ main::-webkit-scrollbar {
   align-items: center;
   border: none;
   border-radius: 20px;
-  margin: 5% 0;
+  margin: 10px 0;
 }
 
 .open-sign {
