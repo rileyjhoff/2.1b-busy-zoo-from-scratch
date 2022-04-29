@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Welcome to the Zoo</h1>
+        <h2>Welcome to the Busy Zoo</h2>
       </header>
       <main>
         <Fight 
@@ -32,7 +32,7 @@ function App() {
         />
       </main>
       <footer>
-        <h3>This is the footer</h3>
+        <p>The Busy Zoo is not responsible for any injuries resulting from our animal parade or unicorn/lion fights</p>
       </footer>
     </div>
   );
