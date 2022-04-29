@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-export default function Parade() {
+export default function Parade({ animals, setAnimals }) {
   return (
     <div className='parade-container'>
       <h5>Add to the Animal Parade</h5>
@@ -16,7 +16,7 @@ export default function Parade() {
         <Button variant='outline-secondary'>🦒</Button>
       </div>
       <div className='parade'>
-
+        <span>🚂</span>
       </div>
     </div>
   );

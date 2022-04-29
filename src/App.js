@@ -9,6 +9,7 @@ function App() {
   const [unicornSize, setUnicornSize] = useState(10);
   const [lionSize, setLionSize] = useState(10);
   const [isOpen, setIsOpen] = useState(false);
+  const [animals, setAnimals] = useState([]);
   return (
     <div className="App">
       <header>
@@ -25,7 +26,10 @@ function App() {
           isOpen={isOpen} 
           setIsOpen={setIsOpen} 
         />
-        <Parade />
+        <Parade 
+          animals={animals}
+          setAnimals={setAnimals}
+        />
       </main>
       <footer>
         <h3>This is the footer</h3>
