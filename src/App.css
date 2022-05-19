@@ -165,3 +165,7 @@ main::-webkit-scrollbar {
 .parade span {
   margin: 0 2px;
 }
+
+.my-table {
+  width: 100%
+}
