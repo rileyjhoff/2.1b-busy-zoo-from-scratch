@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
+import CustomButton from './CustomButton';
 
 export default function OpenSign({ isOpen, setIsOpen }) {
   return (
@@ -9,21 +10,23 @@ export default function OpenSign({ isOpen, setIsOpen }) {
       </div>
       {isOpen ? (
         <div className="open-buttons">
-          <Button variant="contained" color="success" disabled>
-            Open
-          </Button>
-          <Button variant="contained" color="error" onClick={() => setIsOpen(false)}>
-            Close
-          </Button>
+          <CustomButton variant={'contained'} color={'success'} text={'Open'} disabled={true} />
+          <CustomButton
+            variant={'contained'}
+            color="error"
+            text={'Close'}
+            onClick={() => setIsOpen(false)}
+          />
         </div>
       ) : (
         <div className="open-buttons">
-          <Button variant="contained" color="success" onClick={() => setIsOpen(true)}>
-            Open
-          </Button>
-          <Button variant="contained" color="error" disabled>
-            Close
-          </Button>
+          <CustomButton
+            variant={'contained'}
+            color={'success'}
+            text={'Open'}
+            onClick={() => setIsOpen(true)}
+          />
+          <CustomButton variant={'contained'} color="error" text={'Close'} disabled={true} />
         </div>
       )}
     </div>
