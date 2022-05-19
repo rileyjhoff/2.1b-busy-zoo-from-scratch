@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '@mui/material/Button';
 import CustomButton from './CustomButton';
 
 export default function OpenSign({ isOpen, setIsOpen }) {
