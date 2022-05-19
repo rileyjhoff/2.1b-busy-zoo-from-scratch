@@ -11,8 +11,8 @@ export default function ZooPage() {
   return (
     <div className="App">
       <header>
-        <h2>Welcome to the Busy Zoo</h2>
         <a href="/">Home</a>
+        <h2>Welcome to the Busy Zoo</h2>
         <a href="/admin">Admin</a>
       </header>
       <main>
