@@ -29,10 +29,12 @@ export default function MyTable() {
             background: 'black',
             color: 'white',
           },
-          pageSizeOptions: [5, 10, 25, 50],
+          pageSize: 10,
+          pageSizeOptions: [10, 25, 50],
           rowStyle: {
             color: 'blue',
           },
+          padding: 'dense',
         }}
       />
     </div>

@@ -169,3 +169,7 @@ main::-webkit-scrollbar {
 .my-table {
   width: 100%
 }
+
+.my-charts h3 {
+  margin-bottom: 0;
+}
