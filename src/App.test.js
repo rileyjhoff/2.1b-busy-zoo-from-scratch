@@ -1,9 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import App from './App';
-import Parade from './components/Parade';
+import ZooPage from './components/ZooPage';
 
 test('test that close button is disabled & open button is NOT disabled on load. when I click the open button, the open button is disabled and the close button is no longer disabled. then, when I click on the close button, the close button is disabled and the open button is no longer disabled', () => {
-  render(<App />);
+  render(<ZooPage />);
   const openButton = screen.getByText(/Open/i);
   const closeButton = screen.getByText(/Close/i);
   expect(closeButton).toBeDisabled();
@@ -17,7 +16,7 @@ test('test that close button is disabled & open button is NOT disabled on load. 
 });
 
 test('test that animal parade buttons are adding their respective emojis to the screen', () => {
-  render(<App />);
+  render(<ZooPage />);
   const rhinoButton = screen.getByText(/🦏/i);
   const rhinoCountBeforeButtonClick = screen.queryAllByText(/🦏/i);
   expect(rhinoCountBeforeButtonClick.length).toBe(1);
